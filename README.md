@@ -1,7 +1,7 @@
 🧠 Project Overview
 This is a backend API built with Node.js + TypeScript, practicing SOLID principles, Clean Architecture, and Test-Driven Development (TDD).
 
-Judging by the name, it's simulating some kind of gym membership system, possibly inspired by the Gympass app. (No free workout included, unfortunately.)
+ it's simulating a gym membership system, inspired by the Gympass app. (No free workout included, unfortunately.)
 
 📁 Folder Structure (src/)
 🪓 @prisma/
@@ -64,7 +64,7 @@ Unit tests for core features like check-ins, registrations, etc.
 
 Uses in-memory repos to isolate logic from the database. Smart.
 
-You’re doing TDD right: write a test, watch it fail, build just enough to make it pass. Then cry a little. Then refactor.
+ doing TDD right: write a test, watch it fail, build just enough to make it pass. Then cry a little. Then refactor.
 
 🔥 Key Concepts Practiced
 SOLID Principles (especially Dependency Inversion and Single Responsibility)
@@ -76,10 +76,6 @@ TDD – you're writing tests first, like a responsible dev with trust issues.
 Prisma – type-safe ORM that makes SQL bearable.
 
 In-memory Repos – clean way to write tests without touching a real DB.
-
-
-
-
 
 
 
