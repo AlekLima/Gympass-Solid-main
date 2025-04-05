@@ -127,56 +127,56 @@ Longitude
 
 📌 Application Requirements (Routes)
 /users
- Should be possible to create a user
+ (x) Should be possible to create a user 
 
- Should be possible to authenticate a user
+ (x) Should be possible to authenticate a user
 
- Should be possible to retrieve the profile of the logged-in user
+ (x) Should be possible to retrieve the profile of the logged-in user
 
 Additional constraints:
 
- A user should not be able to register with a duplicate email
+ (x) A user should not be able to register with a duplicate email
 
- Total count of off-diet meals
+ (x) Total count of off-diet meals
 
- Best streak of on-diet meals
+ (x) Best streak of on-diet meals
 
- A user can only view, edit, and delete meals they created
+ (x) A user can only view, edit, and delete meals they created
 
 (Note: The last 3 items seem related to a diet tracker and might have been copied from another project.)
 
 /check-ins
- Should be possible to retrieve the number of check-ins made by the logged-in user
+ (x) Should be possible to retrieve the number of check-ins made by the logged-in user
 
- Should be possible for a user to get their check-in history
+ (x) Should be possible for a user to get their check-in history
 
- Should be possible for a user to check into a gym
+ (x) Should be possible for a user to check into a gym
 
- Should be possible to validate a user's check-in
+ (x) Should be possible to validate a user's check-in
 
- A user cannot perform more than one check-in per day
+ (x) A user cannot perform more than one check-in per day
 
- A user cannot check-in unless they are within 100m of the gym
+ (x) A user cannot check-in unless they are within 100m of the gym
 
- A check-in can only be validated up to 20 minutes after creation
+ (x) A check-in can only be validated up to 20 minutes after creation
 
- Only administrators can validate a check-in
+ (x) Only administrators can validate a check-in
 
 /gyms
- Should be possible to register a gym
+ (x) Should be possible to register a gym
 
- Should be possible for users to search for nearby gyms (within 10km)
+ (x) Should be possible for users to search for nearby gyms (within 10km)
 
- Should be possible for users to search gyms by name
+ (x) Should be possible for users to search gyms by name
 
- Only administrators can register gyms
+ (x) Only administrators can register gyms
 
 🔒 Non-Functional Requirements (NFRs)
  User passwords must be encrypted
 
- Application data must be persisted in a PostgreSQL database
+ (x) Application data must be persisted in a PostgreSQL database
 
- All data lists must be paginated with 20 items per page
+ (x) All data lists must be paginated with 20 items per page
 
- Users must be identified using JWT (JSON Web Token)
+ (x) Users must be identified using JWT (JSON Web Token)
 
