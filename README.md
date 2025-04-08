@@ -1,17 +1,17 @@
-🧠 Project Overview
+### 🧠 Project Overview
 This is a backend API built with Node.js + TypeScript, practicing SOLID principles, Clean Architecture, and Test-Driven Development (TDD).
 
  it's simulating a gym membership system, inspired by the Gympass app. (No free workout included, unfortunately.)
 
-📁 Folder Structure (src/)
-🪓 @prisma/
+## 📁 Folder Structure (src/)
+### 🪓 @prisma/
 Contains the auto-generated Prisma files.
 
 client.ts: Initializes Prisma Client – your gateway to the database.
 
 Yes, it's boilerplate, but it’s your ORM BFF.
 
-🧠 domain/
+### 🧠 domain/
 This is where your core business logic lives.
 
 entities/
@@ -27,10 +27,10 @@ These entities are rich with business rules and exist independently of infrastru
 
 repositories/ Only interfaces live here. You’re defining the contracts (UsersRepository, CheckInsRepository, etc.) so the domain doesn’t depend on any database tech.
 
-🛠 infra/
+### 🛠 infra/
 This is the infrastructure layer—real implementations of the repository interfaces.
 
-prisma/
+### prisma/
 
 Implements repositories using Prisma.
 
@@ -38,7 +38,7 @@ PrismaUsersRepository, PrismaGymsRepository, etc.
 
 Keeps the domain layer database-agnostic. 👌
 
-🤹‍♂️ use-cases/
+### 🤹‍♂️ use-cases/
 Here’s where the application logic lives—use cases like:
 
 RegisterUseCase
@@ -57,7 +57,7 @@ Dependency injection of repositories.
 
 💡 These are classic clean architecture moves.
 
-🧪 tests/
+### 🧪 tests/
 A treasure trove of Vitest tests written for every use case:
 
 Unit tests for core features like check-ins, registrations, etc.
@@ -66,7 +66,7 @@ Uses in-memory repos to isolate logic from the database. Smart.
 
  doing TDD right: write a test, watch it fail, build just enough to make it pass. Then cry a little. Then refactor.
 
-🔥 Key Concepts Practiced
+## 🔥 Key Concepts Practiced
 SOLID Principles (especially Dependency Inversion and Single Responsibility)
 
 Clean Architecture – separation of domain, application, and infra.
@@ -80,7 +80,7 @@ In-memory Repos – clean way to write tests without touching a real DB.
 
 
 
-Gympass-Solid Project
+## Gympass-Solid Project
 Backend application for software that simulates GymPass!
 🛠️ Technologies Used
 Vitest – For unit and end-to-end tests
@@ -125,7 +125,7 @@ Latitude
 
 Longitude
 
-📌 Application Requirements (Routes)
+## 📌 Application Requirements (Routes)
 /users
  (x) Should be possible to create a user 
 
@@ -171,7 +171,7 @@ Additional constraints:
 
  (x) Only administrators can register gyms
 
-🔒 Non-Functional Requirements (NFRs)
+## 🔒 Non-Functional Requirements (NFRs)
  User passwords must be encrypted
 
  (x) Application data must be persisted in a PostgreSQL database
